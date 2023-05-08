@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ultimate Claims Resources</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/terms-definitions.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Ultimate Claim Resources</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="shingle-manufacture-documents.html">Manufacturer Documents</a></li>
+							<li><a href="terms-definitions.html">Insurance Terms & Definitions</a></li>
+						</ul>
+					</nav>
+
+									<!-- Main -->
+					<div id="main">
+					<h1>Insurance Terms & Defintions</h1>
+					  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for term..." >
+					  <div class="termsTableContainer">
+					    <table id="termsTable">
+					      <tr class="header">
+					        <th style="width:40%;">Term</th>
+					        <th style="width:60%;">Definition</th>
+					      </tr>
+					      <tr>
+					        <td>Actual Cash Value (ACV)</td>
+					        <td>Actual cash value (ACV) is the amount equal to the replacement cost minus depreciation of a damaged or stolen property at the time of the loss.  </td>
+					      </tr>
+					      <tr>
+					        <td>Replacement Cost Value (RCV)</td>
+					        <td>The cost to replace the damaged property at todays pricing.</td>
+					      </tr>
+					      <tr>
+					        <td></td>
+					        <td></td>
+					      </tr>
+					      <tr>
+					        <td></td>
+					        <td></td>
+					      </tr>
+					    </table>
+					  </div>
+					 </div>
+					
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!-- <section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section> -->
+							
+							<ul class="copyright">
+								<li>&copy; Ultimate Claim Resources. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<!-- Footer Script -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Terms and Definitions Table Search Script -->
+		<script>
+		function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("termsTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
+  }
+  </script>
+</body>
+</html>
