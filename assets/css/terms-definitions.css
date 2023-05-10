@@ -19,7 +19,7 @@ li {
 .scroll {
   overflow: auto;
 }
-td {
+tr {
   height: 20px;
 }
 
